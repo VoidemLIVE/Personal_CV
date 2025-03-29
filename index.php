@@ -7,35 +7,42 @@ function monthsAgo($date) {
     $now = new DateTime();
     $past = new DateTime($date);
     $interval = $now->diff($past);
-    return $interval->m + ($interval->y * 12);
+    $years = $interval->y;
+    $months = $interval->m;
+    if ($years > 0) {
+        return "$years year" . ($years > 1 ? "s" : "") . " $months month" . ($months != 1 ? "s" : "");
+    } else {
+        return $months . " month" . ($months != 1 ? "s" : "");
+    }
+}
+
+function monthsWorked($startDate, $endDate) {
+    $start = new DateTime($startDate);
+    $end = new DateTime($endDate);
+    $interval = $start->diff($end);
+    $years = $interval->y;
+    $months = $interval->m;
+    if ($years > 0) {
+        return "$years year" . ($years > 1 ? "s" : "") . " $months month" . ($months != 1 ? "s" : "");
+    } else {
+        return $months . " month" . ($months != 1 ? "s" : "");
+    }
 }
 
 // Months at Jam Coding
 $JCdate = '2024-02-01';
 $JCmonths = monthsAgo($JCdate);
-if ($JCmonths === 1) {
-    $JCtime = $JCmonths . " month";
-} else {
-    $JCtime = $JCmonths . " months";
-}
-
+$JCtime = $JCmonths;
 // Months at Bundle Group
 $BGdate = '2024-02-01';
 $BGmonths = monthsAgo($BGdate);
-if ($BGmonths === 1) {
-    $BGtime = $BGmonths . " month";
-} else {
-    $BGtime = $BGmonths . " months";
-}
+$BGtime = $BGmonths;
 
 //Months at Ascot
 $Ascotdate = '2024-09-01';
-$Ascotmonths = monthsAgo($Ascotdate);
-if ($Ascotmonths === 1) {
-    $Ascottime = $Ascotmonths . " month";
-} else {
-    $Ascottime = $Ascotmonths . " months";
-}
+$AscotEndDate = '2025-03-01';
+$Ascotmonths = monthsWorked($Ascotdate, $AscotEndDate);
+$Ascottime = $Ascotmonths;
 
 
 ?>
@@ -50,7 +57,7 @@ if ($Ascotmonths === 1) {
     <title>Callum Telfer | CV</title>
     <meta name="description" content="Callum Telfer's CV">
     <meta name="author" content="Callum Telfer">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -134,12 +141,13 @@ if ($Ascotmonths === 1) {
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Java</span>
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Teamworking</span>
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Spigot</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Redis</span>
                         </div>
                     </div>
 
                     <div>
                         <h3 class="text-xl font-bold mb-2">Kitchen Staff</h3>
-                        <p class="text-gray-400 mb-2">Sept 2024 - Present (<?php echo $Ascottime?>)</p>
+                        <p class="text-gray-400 mb-2">Sept 2024 - March 2025 (<?php echo $Ascottime?>)</p>
                         <p class="text-gray-400 mb-4">Company: Ascot Brewing Company, Camberley</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Teamworking</span>
@@ -156,14 +164,14 @@ if ($Ascotmonths === 1) {
                 <div class="space-y-8">
                     <div class="border-b border-gray-800 pb-8">
                         <h3 class="text-xl font-bold mb-2">
-                            <a href="https://www.farn-ct.ac.uk/" class="hover:text-gray-300">Farnborough College of Technology</a>
+                            <a href="https://www.farn-ct.ac.uk/" target="_blank" class="hover:text-gray-300">Farnborough College of Technology</a>
                         </h3>
                         <p class="text-gray-400 mb-2">Sep 2023 - Jul 2025</p>
                         <p class="text-gray-400 mb-4">T Level in Digital Production, Design and Development</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">C#</span>
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">PHP</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">MySQL</span>
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Teamworking</span>
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Project Management</span>
                         </div>
@@ -171,10 +179,10 @@ if ($Ascotmonths === 1) {
 
                     <div>
                         <h3 class="text-xl font-bold mb-2">
-                            <a href="https://www.edgbarrowschool.co.uk/" class="hover:text-gray-300">Edgbarrow School</a>
+                            <a href="https://www.edgbarrowschool.co.uk/" target="_blank" class="hover:text-gray-300">Edgbarrow School</a>
                         </h3>
-                        <p class="text-gray-400 mb-2">2018 - 2023</p>
-                        <p class="text-gray-400">Subjects: Computer Science, Maths, English Language, Science, Geography, Creative iMedia</p>
+                        <p class="text-gray-400 mb-2">Sep 2018 - Jul 2023</p>
+                        <p class="text-gray-400 mb-4">Subjects: Computer Science, Maths, English Language, Science, Geography, Creative iMedia</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Python</span>
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">HTML</span>
@@ -197,7 +205,7 @@ if ($Ascotmonths === 1) {
                         <div>
                             <a href="https://www.credly.com/badges/dc89f6e9-b293-41ca-8ae7-4766f33b1da2/public_url" 
                                class="text-xl font-bold hover:text-gray-300">Python Essentials 2</a>
-                            <p class="text-gray-400">Cisco</p>
+                            <p class="text-gray-400 mb-4">Cisco</p>
                             <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Python</span>
                         </div>
@@ -208,7 +216,7 @@ if ($Ascotmonths === 1) {
                         <div>
                             <a href="https://www.credly.com/badges/0eba3f90-cb0b-4a4b-a54b-7eb472a09aaa/public_url" 
                                class="text-xl font-bold hover:text-gray-300">IT Essentials</a>
-                            <p class="text-gray-400">Cisco</p>
+                            <p class="text-gray-400 mb-4">Cisco</p>
                             <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Networks</span>
                             <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Computer Hardware</span>
@@ -236,6 +244,18 @@ if ($Ascotmonths === 1) {
                     <span class="px-4 py-2 bg-gray-800 rounded-full">Front-End Development</span>
                     <span class="px-4 py-2 bg-gray-800 rounded-full">Network Security</span>
                     <span class="px-4 py-2 bg-gray-800 rounded-full">Git</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-800" data-aos="fade-up">
+                <div class="flex items-center mb-8">
+                    <div class="w-1 h-8 bg-sky-500 rounded-full mr-4"></div>
+                    <h2 class="text-2xl font-bold">Currently Learning</h2>
+                </div>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 bg-gray-800 rounded-full">C</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full">C#</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full">Docker</span>
                 </div>
             </div>
         </div>
