@@ -38,12 +38,6 @@ $BGdate = '2024-02-01';
 $BGmonths = monthsAgo($BGdate);
 $BGtime = $BGmonths;
 
-//Months at Ascot
-$Ascotdate = '2024-09-01';
-$AscotEndDate = '2025-03-01';
-$Ascotmonths = monthsWorked($Ascotdate, $AscotEndDate);
-$Ascottime = $Ascotmonths;
-
 
 ?>
 
@@ -127,8 +121,8 @@ $Ascottime = $Ascotmonths;
                         <p class="text-gray-400 mb-2">Feb 2024 - Present (<?php echo $JCtime?>)</p>
                         <p class="text-gray-400 mb-4">Company: <a href="https://jamcoding.co.uk/" class="text-blue-400 hover:text-blue-300">Jam Coding</a></p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Teaching</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Teamworking</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Teaching</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Teamworking</span>
                         </div>
                     </div>
 
@@ -138,19 +132,10 @@ $Ascottime = $Ascotmonths;
                         <p class="text-gray-400 mb-4">Company: <a href="https://bundlegroup.gg/" class="text-blue-400 hover:text-blue-300">Bundle Group Ltd</a></p>
                         <p class="text-gray-400 mb-4">Volunteer Developer for Bundle Group's event Coaster Con which raises money for the Extra Life charity</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Java</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Teamworking</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Spigot</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Redis</span>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Kitchen Staff</h3>
-                        <p class="text-gray-400 mb-2">Sept 2024 - March 2025 (<?php echo $Ascottime?>)</p>
-                        <p class="text-gray-400 mb-4">Company: Ascot Brewing Company, Camberley</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Teamworking</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Java</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Teamworking</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Spigot</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Redis</span>
                         </div>
                     </div>
                 </div>
@@ -169,11 +154,11 @@ $Ascottime = $Ascotmonths;
                         <p class="text-gray-400 mb-2">Sep 2023 - Jul 2025</p>
                         <p class="text-gray-400 mb-4">T Level in Digital Production, Design and Development</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">PHP</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">MySQL</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Teamworking</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Project Management</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Python</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">PHP</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">MySQL</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Teamworking</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Project Management</span>
                         </div>
                     </div>
 
@@ -184,11 +169,11 @@ $Ascottime = $Ascotmonths;
                         <p class="text-gray-400 mb-2">Sep 2018 - Jul 2023</p>
                         <p class="text-gray-400 mb-4">Subjects: Computer Science, Maths, English Language, Science, Geography, Creative iMedia</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">HTML</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">CSS</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Teamworking</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Photoshop</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Python</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">HTML</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">CSS</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Teamworking</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Photoshop</span>
                         </div>
                     </div>
                 </div>
@@ -203,25 +188,40 @@ $Ascottime = $Ascotmonths;
                     <div class="flex items-center gap-4">
                         <i class="fas fa-certificate text-yellow-500"></i>
                         <div>
-                            <a href="https://www.credly.com/badges/dc89f6e9-b293-41ca-8ae7-4766f33b1da2/public_url" 
+                            <a target="_blank" href="https://courses.edx.org/certificates/74ff4fc890ab4def9e3093bd0f11cd26?trk=public_profile_see-credential"
+                                class="text-xl font-bold hover:text-gray-300">CS50x: Introduction to Computer Science</a>
+                            <p class="text-gray-400 mb-4">Harvard University</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">C</span>
+                                <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Python</span>
+                                <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Data Structures</span>
+                                <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Memory Management</span>
+                                <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-certificate text-yellow-500"></i>
+                        <div>
+                            <a target="_blank" href="https://www.credly.com/badges/dc89f6e9-b293-41ca-8ae7-4766f33b1da2/public_url" 
                                class="text-xl font-bold hover:text-gray-300">Python Essentials 2</a>
                             <p class="text-gray-400 mb-4">Cisco</p>
                             <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Python</span>
                         </div>
                         </div>
                     </div>
                     <div class="flex items-center gap-4">
                         <i class="fas fa-certificate text-yellow-500"></i>
                         <div>
-                            <a href="https://www.credly.com/badges/0eba3f90-cb0b-4a4b-a54b-7eb472a09aaa/public_url" 
+                            <a target="_blank" href="https://www.credly.com/badges/0eba3f90-cb0b-4a4b-a54b-7eb472a09aaa/public_url" 
                                class="text-xl font-bold hover:text-gray-300">IT Essentials</a>
                             <p class="text-gray-400 mb-4">Cisco</p>
                             <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Networks</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Computer Hardware</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Operating Systems</span>
-                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Printers</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Networks</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Computer Hardware</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Operating Systems</span>
+                            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm hover:scale-105">Printers</span>
                         </div>
                         </div>
                     </div>
@@ -234,20 +234,20 @@ $Ascottime = $Ascotmonths;
                     <h2 class="text-2xl font-bold">Skills</h2>
                 </div>
                 <div class="flex flex-wrap gap-3">
-                    <span class="px-4 py-2 bg-gray-800 rounded-full">Programming</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-full">Python</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-full">Java</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-full">HTML</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-full">PHP</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-full">MySQL</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-full">JavaScript</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-full">Front-End Development</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-full">Network Security</span>
-                    <span class="px-4 py-2 bg-gray-800 rounded-full">Git</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full hover:scale-105">Programming</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full hover:scale-105">Java</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full hover:scale-105">PHP</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full hover:scale-105">Python</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full hover:scale-105">C</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full hover:scale-105">SQL</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full hover:scale-105">JavaScript</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full hover:scale-105">Front-End Development</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full hover:scale-105">Back-End Web Development</span>
+                    <span class="px-4 py-2 bg-gray-800 rounded-full hover:scale-105">Git</span>
                 </div>
             </div>
 
-            <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-800" data-aos="fade-up">
+            <!--<div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-800" data-aos="fade-up"> TEMPORARILY REMOVED
                 <div class="flex items-center mb-8">
                     <div class="w-1 h-8 bg-sky-500 rounded-full mr-4"></div>
                     <h2 class="text-2xl font-bold">Currently Learning</h2>
@@ -257,7 +257,7 @@ $Ascottime = $Ascotmonths;
                     <span class="px-4 py-2 bg-gray-800 rounded-full">C#</span>
                     <span class="px-4 py-2 bg-gray-800 rounded-full">Docker</span>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <footer class="py-8 border-t border-gray-800 px-4 mb-4">
